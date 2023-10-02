@@ -25,6 +25,16 @@ const segments = await fetchTranscript("dQw4w9WgXcQ");
 
 - fetchTranscript(videoId: string [,options: TranscriptConfig]): Promise<TranscriptResponse[] | undefined>;
 
+## Contribution
+
+PRs are welcome. Testing and coding guidlines are still in the works so I will try to get those created at a later point. Try to keep similar code syntax to the rest of the code.
+
+## Credits
+
+This is a fork of the `youtube-transcript` module created by @Kakulukian but uses native `fetch` for requests.
+
+View the original project on [NPM](https://www.npmjs.com/package/youtube-transcript).
+
 ## License
 
 Distributed under MIT License (`The MIT License`).
