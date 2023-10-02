@@ -5,3 +5,4 @@
 ### Patch Changes
 
 - 73fdae0: test workflows
+- add npmignore
