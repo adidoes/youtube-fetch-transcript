@@ -1,6 +1,8 @@
 {
   "name": "youtube-fetch-transcript",
-  "license": "MIT",
+  "description": "Fetch transcript from a YouTube video",
+  "repository": "https://github.com/adidoes/youtube-fetch-transcript",
+  "private": false,
   "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,7 +11,7 @@
     "dev": "vitest",
     "test": "vitest run",
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "release": "pnpm run build && changeset publish",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish",
     "lint": "tsc",
     "ci": "pnpm run lint && pnpm run test && pnpm run build"
   },
@@ -18,5 +20,20 @@
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
-  }
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "trailingComma": "all",
+    "semi": true,
+    "printWidth": 80,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "useTabs": false
+  },
+  "author": "Adrian Nuta",
+  "license": "MIT",
+  "keywords": [
+    "youtube",
+    "transcript"
+  ]
 }
